@@ -1,5 +1,4 @@
-
-/*///// Base styles///// */
+/* Base Styles */
 
 body{
     font-family: 'Lato', sans-serif;
@@ -52,8 +51,10 @@ hr{
     height: 200px;
     z-index: 1;
     color: #CEA434;
-    display: flex;
-    
+}
+
+.lead {
+    font-size: 1.5em;
 }
 
 .color-overlay { 
@@ -69,20 +70,30 @@ hr{
 }
 
     /* Typing Animation */
-    .typing {
+    /* .typing {
         position: relative;
     }
 
     .typing::after{
-        content:"";
+        content:" ";
         position: absolute;
         width: 5px;
         height: 30%;
         border-right: 4px solid #CEA434;
-        animation: blink .5s infinite; 
-    }
+        animation: blink .7s infinite; 
 
-    @media (min-width: 768px) { 
+        
+    } */
+
+    .container span.cursor {
+        
+        background-color: #CEA434;
+        margin-left: 0.1rem;
+        width: 3px;
+        animation: blink 1s infinite;
+      }
+
+    /* @media (min-width: 768px) { 
         .typing::after {
             height: 40%;
         }
@@ -94,17 +105,19 @@ hr{
         .typing::after {
             height: 50%;
         }
-    }
+    } */
 
-    @keyframes blink {
-        0%{
-            opacity: 0;
-        }
-
-        100%{
-            opacity: 1;
-        }
+    .container p span.cursor.typing {
+        animation: none;
     }
+      @keyframes blink {
+        0%  { background-color: #CEA434; }
+        49% { background-color: #CEA434; }
+        50% { background-color: transparent; }
+        99% { background-color: transparent; }
+        100%  { background-color: #CEA434; }
+      }
+    
 
 
 
