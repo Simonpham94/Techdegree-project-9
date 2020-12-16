@@ -1,32 +1,4 @@
 
-// const text = 'and I make beautiful cakes';
-// const extra = document.querySelector('.extra'); 
-// let introText = '';
-// let i = 0;
-// let j = 0;
-
-
-// function type() {
-//     if(i < text.length) {
-//         introText = document.querySelector('.typing').innerHTML += text.charAt(i);
-//         i++;
-//         setTimeout(type, 100);
-//     } 
-    
-    
-// };
-
-
-// function erase() {
-//     type();
-//     introText = introText.substring(0, introText.length-1);
-//     introText--;
-//     setTimeout(erase, 2000);
-// }
-
-// erase()
-
-
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
