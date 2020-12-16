@@ -69,22 +69,6 @@ hr{
     position: absolute;
 }
 
-    /* Typing Animation */
-    /* .typing {
-        position: relative;
-    }
-
-    .typing::after{
-        content:" ";
-        position: absolute;
-        width: 5px;
-        height: 30%;
-        border-right: 4px solid #CEA434;
-        animation: blink .7s infinite; 
-
-        
-    } */
-
     .container span.cursor {
         
         background-color: #CEA434;
@@ -92,20 +76,6 @@ hr{
         width: 3px;
         animation: blink 1s infinite;
       }
-
-    /* @media (min-width: 768px) { 
-        .typing::after {
-            height: 40%;
-        }
-    
-    
-    }
-    
-    @media (min-width: 1200px) { 
-        .typing::after {
-            height: 50%;
-        }
-    } */
 
     .container p span.cursor.typing {
         animation: none;
@@ -157,13 +127,16 @@ hr{
     align-items: center;
 }
 
-
+/* .row{
+    display: flex; 
+    justify-content: center;
+} */
 
 .project{
     background: url('../img/portfolio/photo-gallery.png');
     background-size: cover;
-    width: 320px; 
-    height: 240px;
+    width: 304px; 
+    height: 228px;
     text-decoration: none;
     text-align: center;
     display: flex; 
@@ -171,8 +144,15 @@ hr{
     align-items: center;
 }
 
+.portfolio-item a{
+    display: inline-block;
+}
+
 .portfolio-item{
-    text-align: center;
+    
+    width: 304px; 
+    height: 228px;
+    padding: 0;
 }
 
 .gallery {
@@ -244,6 +224,12 @@ footer{
 @media (min-width: 768px) { 
     #portfolio {
         height: 1200px;
+        
+        
+    }
+
+    .portfolio-item {
+        margin-right: 15px;
     }
 
 
